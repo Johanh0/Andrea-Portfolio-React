@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    font-size: 2rem;
+    background-color: map-get($colors , off-white );
+
+    .nav-logo {
+        display: flex;
+        span {
+            font-weight: bold;
+            color: map-get($colors, primary-color );
+        }
+    }
+
+    .nav-li {
+        ul{
+            display: flex;
+            gap: 55px;
+            li {
+                list-style: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: map-get($colors , primary-color );
+                }
+            }
+        }
+    }
+
+    .nav-btn button {
+        font-size: 1.5rem;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 20px;
+        color: map-get($colors, off-white );
+        background-color: map-get($colors , primary-color );
+    }
+}
