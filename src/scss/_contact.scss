@@ -34,6 +34,9 @@
             display: flex;
             flex-direction: column;
             width: 400px;
+            background-color: map-get($colors, white );
+            padding: 25px;
+            border-radius: 25px;
 
             label {
                 font-size: 1.4rem;
@@ -46,7 +49,7 @@
                 padding-left: 10px;
                 border: none;
                 border-radius: 5px;
-                background-color: map-get($colors, soft-orange );
+                background-color: map-get($colors, off-white );
             }
 
             textarea {
@@ -54,7 +57,7 @@
                 padding: 10px 0 0 5px;
                 border: none;
                 border-radius: 5px;
-                background-color: map-get($colors, soft-orange );
+                background-color: map-get($colors, off-white );
                 font-family: 'Poppins', sans-serif;
             }
         }

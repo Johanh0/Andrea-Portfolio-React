@@ -10,6 +10,41 @@ html {
   color: #07003B;
   scroll-behavior: smooth; }
 
+#nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 30px;
+  font-size: 2rem;
+  background-color: #F5F5F7; }
+  #nav .nav-logo {
+    display: flex; }
+    #nav .nav-logo span {
+      font-weight: bold;
+      color: #FCA61E; }
+  #nav .nav-li ul {
+    display: flex;
+    gap: 55px; }
+    #nav .nav-li ul li {
+      list-style: none;
+      cursor: pointer; }
+      #nav .nav-li ul li a {
+        text-decoration: none;
+        color: #07003B; }
+        #nav .nav-li ul li a:hover {
+          color: #FCA61E; }
+  #nav .nav-btn button {
+    font-size: 1.8rem;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    color: #F5F5F7;
+    background-color: #FCA61E;
+    cursor: pointer; }
+
 #header {
   display: flex;
   justify-content: center;
@@ -48,40 +83,12 @@ html {
     width: 50%;
     padding-bottom: 0; }
 
-#nav {
-  position: fixed;
+#logos-companies {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: fit-content;
-  padding: 30px;
-  font-size: 2rem;
-  background-color: #F5F5F7; }
-  #nav .nav-logo {
-    display: flex; }
-    #nav .nav-logo span {
-      font-weight: bold;
-      color: #FCA61E; }
-  #nav .nav-li ul {
-    display: flex;
-    gap: 55px; }
-    #nav .nav-li ul li {
-      list-style: none;
-      cursor: pointer; }
-      #nav .nav-li ul li a {
-        text-decoration: none;
-        color: #07003B; }
-        #nav .nav-li ul li a:hover {
-          color: #FCA61E; }
-  #nav .nav-btn button {
-    font-size: 1.8rem;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 20px;
-    color: #F5F5F7;
-    background-color: #FCA61E;
-    cursor: pointer; }
+  gap: 100px;
+  padding: 50px 0; }
 
 #projects {
   display: flex;
@@ -154,7 +161,10 @@ html {
     #contact .form-container form {
       display: flex;
       flex-direction: column;
-      width: 400px; }
+      width: 400px;
+      background-color: white;
+      padding: 25px;
+      border-radius: 25px; }
       #contact .form-container form label {
         font-size: 1.4rem;
         color: #38325E; }
@@ -164,11 +174,70 @@ html {
         padding-left: 10px;
         border: none;
         border-radius: 5px;
-        background-color: #FFF0E1; }
+        background-color: #F5F5F7; }
       #contact .form-container form textarea {
         margin: 5px 0;
         padding: 10px 0 0 5px;
         border: none;
         border-radius: 5px;
-        background-color: #FFF0E1;
+        background-color: #F5F5F7;
         font-family: 'Poppins', sans-serif; }
+
+#email-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 150px 0 50px 0; }
+  #email-me .email-me-container {
+    position: relative;
+    width: 70%;
+    height: 300px;
+    background-color: #F5F5F7;
+    border-radius: 50px; }
+    #email-me .email-me-container div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 450px;
+      height: 100%;
+      margin-left: 55px; }
+      #email-me .email-me-container div p {
+        font-size: 2rem; }
+      #email-me .email-me-container div h3 {
+        font-size: 3.5rem;
+        margin: 0 0 15px 0; }
+      #email-me .email-me-container div a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: #FCA61E; }
+        #email-me .email-me-container div a i {
+          margin-right: 10px; }
+    #email-me .email-me-container img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 300px; }
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px; }
+  #footer .footer-nav ul {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 25px;
+    font-size: 2rem; }
+    #footer .footer-nav ul li, #footer .footer-nav ul a {
+      text-decoration: none;
+      list-style: none;
+      color: #9098B1; }
+  #footer .footer-media {
+    display: flex;
+    gap: 50px;
+    font-size: 2rem; }
+    #footer .footer-media a {
+      color: #07003B; }
