@@ -1,0 +1,62 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: map-get($colors, primary-color );
+    // padding: 50px 0;
+
+    .form-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        padding: 50px 0;
+
+        h2 {
+            font-size: 3rem;
+            
+            span {
+                color: map-get($colors, purple );
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0 25px 0;
+            max-width: 500px;
+            text-align: center;
+            color: map-get($colors, purple );
+        }
+
+        form  {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+
+            label {
+                font-size: 1.4rem;
+                color: map-get($colors, purple );
+            }
+
+            input {
+                margin-bottom: 10px;
+                height: 45px;
+                padding-left: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: map-get($colors, soft-orange );
+            }
+
+            textarea {
+                margin: 5px 0;
+                padding: 10px 0 0 5px;
+                border: none;
+                border-radius: 5px;
+                background-color: map-get($colors, soft-orange );
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+}

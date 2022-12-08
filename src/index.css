@@ -7,34 +7,168 @@
 html {
   font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
-  color: #07003B; }
+  color: #07003B;
+  scroll-behavior: smooth; }
 
-.nav {
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: fit-content;
+  padding: 10px 40px 0 40px;
+  background-color: #F5F5F7; }
+  #header .header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%; }
+    #header .header-left h1 {
+      font-size: 5rem;
+      margin-bottom: 20px; }
+      #header .header-left h1 span {
+        color: #FCA61E; }
+    #header .header-left p {
+      font-size: 2rem;
+      margin-bottom: 20px; }
+    #header .header-left button {
+      margin-top: 20px;
+      width: 150px;
+      height: 40px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 20px;
+      background-color: #FCA61E;
+      color: white;
+      cursor: pointer; }
+  #header .header-right {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-bottom: 0; }
+
+#nav {
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: fit-content;
-  padding: 50px;
+  padding: 30px;
   font-size: 2rem;
   background-color: #F5F5F7; }
-  .nav .nav-logo {
+  #nav .nav-logo {
     display: flex; }
-    .nav .nav-logo span {
+    #nav .nav-logo span {
       font-weight: bold;
       color: #FCA61E; }
-  .nav .nav-li ul {
+  #nav .nav-li ul {
     display: flex;
     gap: 55px; }
-    .nav .nav-li ul li {
+    #nav .nav-li ul li {
       list-style: none;
       cursor: pointer; }
-      .nav .nav-li ul li:hover {
-        color: #FCA61E; }
-  .nav .nav-btn button {
-    font-size: 1.5rem;
+      #nav .nav-li ul li a {
+        text-decoration: none;
+        color: #07003B; }
+        #nav .nav-li ul li a:hover {
+          color: #FCA61E; }
+  #nav .nav-btn button {
+    font-size: 1.8rem;
     padding: 10px 25px;
     border: none;
     border-radius: 20px;
     color: #F5F5F7;
-    background-color: #FCA61E; }
+    background-color: #FCA61E;
+    cursor: pointer; }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 50px; }
+  #projects .projects-title {
+    text-align: center;
+    margin-bottom: 25px; }
+    #projects .projects-title h2 {
+      font-size: 3rem;
+      margin-bottom: 15px; }
+    #projects .projects-title p {
+      font-size: 2rem;
+      max-width: 800px;
+      color: #9098B1; }
+  #projects .project-cards_container {
+    display: flex;
+    gap: 25px; }
+    #projects .project-cards_container .card-1 {
+      background-color: #FFF0E1; }
+    #projects .project-cards_container .card-2 {
+      background-color: #BCE6D8; }
+    #projects .project-cards_container .card-3 {
+      background-color: #E2E7FD; }
+    #projects .project-cards_container .project-card {
+      max-width: 400px;
+      height: fit-content;
+      padding: 5px; }
+    #projects .project-cards_container h4 {
+      font-size: 2rem;
+      margin-top: 10px; }
+    #projects .project-cards_container p {
+      font-size: 1.3rem;
+      margin: 10px 0; }
+    #projects .project-cards_container .card-date {
+      font-size: 1.5rem; }
+    #projects .project-cards_container a {
+      text-decoration: none;
+      color: #FCA61E;
+      font-size: 1.5rem;
+      cursor: pointer; }
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #FCA61E; }
+  #contact .form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    padding: 50px 0; }
+    #contact .form-container h2 {
+      font-size: 3rem; }
+      #contact .form-container h2 span {
+        color: #38325E; }
+    #contact .form-container p {
+      font-size: 1.5rem;
+      margin: 10px 0 25px 0;
+      max-width: 500px;
+      text-align: center;
+      color: #38325E; }
+    #contact .form-container form {
+      display: flex;
+      flex-direction: column;
+      width: 400px; }
+      #contact .form-container form label {
+        font-size: 1.4rem;
+        color: #38325E; }
+      #contact .form-container form input {
+        margin-bottom: 10px;
+        height: 45px;
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FFF0E1; }
+      #contact .form-container form textarea {
+        margin: 5px 0;
+        padding: 10px 0 0 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FFF0E1;
+        font-family: 'Poppins', sans-serif; }
