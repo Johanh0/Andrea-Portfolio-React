@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import LogosCompanies from "./components/LogosCompanies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import EmailMe from "./components/EmailMe";
+import EmailMe from "./components/Resume";
 import Footer from "./components/Footer";
 
 function App() {

@@ -5,16 +5,26 @@
     justify-content: center;
     padding: 50px;
 
-    .footer-nav ul{
+    .footer-nav{
         display: flex;
-        gap: 100px;
-        margin-bottom: 25px;
-        font-size: 2rem;
+        justify-content: center;
+        width: 100%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 15px;
+            max-width: 500px;
+            min-width: 450px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            font-size: 2rem;
 
-        li, a {
-            text-decoration: none;
-            list-style: none;
-            color: map-get($colors, gray );
+            li, a {
+                text-decoration: none;
+                list-style: none;
+                color: map-get($colors, gray );
+            }
         }
     }
 
