@@ -7,9 +7,14 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [about, setAbout] = useState('');
+  const [errorMessage, setErrorMessage] = useState(false)
 
-  const alert = () => {
-    alert(`hey`);
+  const checkInput = (e) => {
+    if(e.target.value === '') {
+      setErrorMessage(true)
+      return;
+    }
+    setErrorMessage(false);
   }
 
 
@@ -27,7 +32,7 @@ const Contact = () => {
                     id='name' 
                     value={name} 
                     onChange={(e) => setName(e.target.value)}
-                    onMouseLeave={alert}/>
+                    onMouseLeave={checkInput}/>
 
                     <label htmlFor="email">Email</label>
                     <input 
@@ -35,7 +40,8 @@ const Contact = () => {
                     placeholder='example@gmail.com' 
                     id='email' 
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}/>
+                    onChange={(e) => setEmail(e.target.value)}
+                    onMouseLeave={checkInput}/>
 
                     <label htmlFor="phone">Phone Number</label>
                     <input 
@@ -43,7 +49,8 @@ const Contact = () => {
                     placeholder='Phone number' 
                     id='phone' 
                     value={phoneNumber}
-                    onChange={(e) => setPhoneNumber(e.target.value)}/>
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                    onMouseLeave={checkInput}/>
 
                     <label htmlFor="about">About</label>
                     <textarea 
@@ -53,9 +60,10 @@ const Contact = () => {
                     placeholder='Write a shot message' 
                     value={about}
                     onChange={(e) => setAbout(e.target.value)}
+                    onMouseLeave={checkInput}
                     ></textarea>
 
-                    <ErrorMessageContact/>
+                    {errorMessage && <ErrorMessageContact/>}
 
                     <input className='submit-btn' type="submit" />
                 </form>
