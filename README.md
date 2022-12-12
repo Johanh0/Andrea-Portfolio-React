@@ -10,7 +10,7 @@ Portfolio for a web designer (Andrea) created with react
 
 
 ## 🚀 Deployment
-https://peaceful-moxie-1a32de.netlify.app/
+https://whimsical-zuccutto-e37fa0.netlify.app/
 
 ## Author
 - [@Johanh0](https://www.github.com/johanh0)
