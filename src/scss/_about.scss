@@ -1,0 +1,59 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 45px;
+
+    .about-left img {
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    .about-right {
+        h2 {
+            font-size: 3rem;
+            color: map-get($colors, secondary-color );
+        }
+
+        p {
+            font-size: 2rem;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+
+        div {
+            display: flex;
+            gap: 25px;
+
+            button {
+                width: 150px;
+                // height: 50px;
+                font-size: 1.8rem;
+                padding: 15px;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+
+                span {
+                    font-weight: bold;
+                    font-size: 2.5rem;
+                }
+            }
+
+            .btn-client {
+                background-color: map-get($colors, off-white );
+
+                span {
+                    color: map-get($colors, soft-green );
+                }
+            }
+
+            .btn-projects {
+                background-color: map-get($colors, primary-color);
+                color: map-get($colors, white );
+            }
+        }
+    }
+}

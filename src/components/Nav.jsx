@@ -2,24 +2,25 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <section className='nav'>
+    <section id='nav'>
 
       <div className='nav-logo'>
-        <img src="" alt="" />
-        <p>Andrea <span>Smith.</span></p>
+        <p>Andrea <span>Smith</span>.</p>
       </div>
 
       <div className='nav-li'>
         <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>footer</li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </div>
 
       <div className='nav-btn'>
         <button>
-          Contact Me
+          View GitHub
         </button>
       </div>
     </section>

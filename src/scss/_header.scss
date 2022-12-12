@@ -1,0 +1,50 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 40px 0 40px;
+    background-color: map-get($colors, off-white );
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+
+            span {
+                color: map-get($colors, primary-color );
+            }
+        }
+
+        p {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 150px;
+            height: 40px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 20px;
+            background-color: map-get($colors, primary-color );
+            color: map-get($colors, white );
+            cursor: pointer;
+        }
+    }
+
+    .header-right {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding-bottom: 0;
+    }
+}
