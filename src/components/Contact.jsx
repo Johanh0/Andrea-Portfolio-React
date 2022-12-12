@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ErrorMessageContact from './ErrorMessageContact';
+import ErrorEmail from './ErrorEmail';
 
 const Contact = () => {
 
@@ -7,7 +8,9 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [about, setAbout] = useState('');
-  const [errorMessage, setErrorMessage] = useState(false)
+  const [errorMessage, setErrorMessage] = useState(false);
+
+  const [errorEmail, setErrorEmail] = useState(null);
 
   const checkInput = (e) => {
     if(e.target.value === '') {
@@ -16,6 +19,20 @@ const Contact = () => {
     }
     setErrorMessage(false);
   }
+
+  const isValidEmail = email => {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChangeForEmail = e => {
+    if(!isValidEmail(e.target.value)) {
+      setErrorEmail(true)
+    } else {
+      setErrorEmail(null)
+    }
+
+    setEmail(e.target.value)
+  } 
 
 
   return (
@@ -40,7 +57,7 @@ const Contact = () => {
                     placeholder='example@gmail.com' 
                     id='email' 
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => handleChangeForEmail(e)}
                     onMouseLeave={checkInput}/>
 
                     <label htmlFor="phone">Phone Number</label>
@@ -64,6 +81,7 @@ const Contact = () => {
                     ></textarea>
 
                     {errorMessage && <ErrorMessageContact/>}
+                    {errorEmail && <ErrorEmail/>}
 
                     <input className='submit-btn' type="submit" />
                 </form>

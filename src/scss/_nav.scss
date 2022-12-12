@@ -20,7 +20,7 @@
     .nav-li {
         ul{
             display: flex;
-            gap: 55px;
+            gap: 40px;
             li {
                 list-style: none;
                 cursor: pointer;
@@ -28,6 +28,7 @@
                 a {
                     text-decoration: none;
                     color: map-get($colors, secondary-color );
+                    font-size: 1.8rem;
 
                     &:hover {
                         color: map-get($colors , primary-color );

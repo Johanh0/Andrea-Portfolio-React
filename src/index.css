@@ -27,13 +27,14 @@ html {
       color: #FCA61E; }
   #nav .nav-li ul {
     display: flex;
-    gap: 55px; }
+    gap: 40px; }
     #nav .nav-li ul li {
       list-style: none;
       cursor: pointer; }
       #nav .nav-li ul li a {
         text-decoration: none;
-        color: #07003B; }
+        color: #07003B;
+        font-size: 1.8rem; }
         #nav .nav-li ul li a:hover {
           color: #FCA61E; }
   #nav .nav-btn button {
@@ -138,6 +139,44 @@ html {
       color: #FCA61E;
       font-size: 1.5rem;
       cursor: pointer; }
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 45px; }
+  #about .about-left img {
+    width: 400px;
+    border-radius: 20px; }
+  #about .about-right h2 {
+    font-size: 3rem;
+    color: #07003B; }
+  #about .about-right p {
+    font-size: 2rem;
+    max-width: 500px;
+    margin-bottom: 30px; }
+  #about .about-right div {
+    display: flex;
+    gap: 25px; }
+    #about .about-right div button {
+      width: 150px;
+      font-size: 1.8rem;
+      padding: 15px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer; }
+      #about .about-right div button span {
+        font-weight: bold;
+        font-size: 2.5rem; }
+    #about .about-right div .btn-client {
+      background-color: #F5F5F7; }
+      #about .about-right div .btn-client span {
+        color: #BCE6D8; }
+    #about .about-right div .btn-projects {
+      background-color: #FCA61E;
+      color: white; }
 
 #contact {
   display: flex;
@@ -293,7 +332,11 @@ html {
     #header .header-left button {
       margin: 0 auto; }
     #header .header-right img {
-      width: 500px; } }
+      width: 500px; }
+  #about {
+    text-align: center; }
+    #about .about-right div {
+      justify-content: center; } }
 
 @media (max-width: 1000px) {
   #resume .resume-container {
